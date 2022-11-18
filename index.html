@@ -11,6 +11,8 @@
 <style>
 body {
     margin: 0px;
+    font-family: "arial", sans-serif;
+
 }
 
 .wrapper-container{
@@ -37,7 +39,7 @@ body {
   .header { 
     width: 100%;
 	height:72px;
-	    margin: 0 24px 0 0;
+	        margin: 0 0 0 24px;
 	border-bottom: 1px solid #ccc;
 	background: #fff;	
   }
@@ -57,7 +59,7 @@ body {
   }
   .item3 { 
     flex-grow:1;
-	background: #eee;
+	background: #fff;
   }
   .item4 { 
     width: 288px;
@@ -66,6 +68,31 @@ body {
 		
 #header-normal{display:block;}
 #header-phone {display:none;}
+
+
+
+.fixed-width-col {
+width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    /* position: relative; */
+    /* top: 0px; */
+    padding: 40px;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 40px;
+    color: #662d8c;
+    margin-block-end: 15px;
+    margin-block-start: 0;
+	}
+p{
+font-size: 23px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    margin-block-end: 14px;
+    margin-block-start: 0px;}
 
 @media only screen and (max-width: 1139px) {
   .item4 {
@@ -98,8 +125,30 @@ body {
 		<div class="col2">
 		<div class="header"><img id="header-normal" src="header.png"><img id="header-phone" src="header-phone.png"></div>
 			<div class="flex-container"> 
-			<div class="item2">item 2</div>
-			<div class="item3">item 3</div>
+			<div class="item2">TEMP<br>LEFT<br>MENU</div>
+			<div class="item3">
+			<!-- --------------------------------------------------------- -->
+			<!-- --------------------------------------------------------- -->
+			<!-- --------------------------------------------------------- -->
+			
+			<div class="fixed-width-col">
+			<h2>H2 Text</h2>
+<p>Web design is really just one expression of the skill set we will be exploring. We don’t term typography class “brochure design” so I’d argue
+we shouldn’t teach design for interaction as "web" design (even though this semester our focus will be almost exclusively on web pages).</p>
+<p>The skills we are learning are equally applicable to other applications many of which represent huge growth industries for graphic designers
+at present. I’m referring to things like mobile app design, kiosk interface (a kiosk is a purpose-built computer such as an ATM, an information
+kiosk, the check-in station at the airport, or a self-serve check out at the supermarket), computer game design, eBook design, and many more
+applications, some probably as yet unimagined! After all, in the fast-moving world of graphic design, interface design is indisputably the fastest
+part of all. Rapidly changing technologies are forcing our design patterns to respond evolving equally rapidly. The mechanics and tools of
+creation are constantly becoming obsolete as they are replaced by new tools.</p>
+<p>This presents us with a problem. Do we teach you to use a tool that may be useless within a few years, like we saw with the rise & fall of
+Flash™?</p>
+			
+			</div>			
+			<!-- --------------------------------------------------------- -->
+			<!-- --------------------------------------------------------- -->
+			<!-- --------------------------------------------------------- -->
+			</div>
 			<div class="item4"><img src="col-4.png"></div>
 			</div>	
 		</div>
