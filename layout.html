@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title></title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="images/favicon.png" />
+<style>
+body {
+    margin: 0px;
+    font-family: "arial", sans-serif;
+
+}
+
+.wrapper-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+		background: #3c1053;
+
+}
+  .col1 { 
+	width: 84px;
+  }
+  
+  .col2 { 
+	flex: 0 1 auto;
+    align-self: auto;
+	width: 100%;
+	    background: #fff;
+  }
+  
+  .header { 
+    width: 100%;
+	height:72px;
+	        margin: 0 0 0 24px;
+	border-bottom: 1px solid #ccc;
+	background: #fff;	
+  }
+
+  .flex-container {
+    display: flex;
+    height: 98vh;
+  }
+
+  .flex-container > div{
+	height: 100%;
+  }
+  
+  .item2 { 
+    width:192px;
+	background: #bbb;
+  }
+  .item3 { 
+    flex-grow:1;
+	background: #fff;
+  }
+  .item4 { 
+    width: 288px;
+	background: #fff;	
+  }
+		
+#header-normal{display:block;}
+#header-phone {display:none;}
+
+
+
+.fixed-width-col {
+width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    /* position: relative; */
+    /* top: 0px; */
+    padding: 40px;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 40px;
+    color: #662d8c;
+    margin-block-end: 15px;
+    margin-block-start: 0;
+	}
+p{
+font-size: 23px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    margin-block-end: 14px;
+    margin-block-start: 0px;}
+
+@media only screen and (max-width: 1139px) {
+  .item4 {
+    display:none;
+  }
+}		
+@media only screen and (max-width: 767px) {
+  .col1 {
+    display:none;
+  }
+  .item2 {
+    display:none;
+  }
+	#header-normal{display:none;}
+	#header-phone {display:block;}
+	
+  .header { 
+    width: 100%;
+	height:55px;
+	margin: 0;
+	border-bottom: 0px solid #ccc;
+	background: #3c1053;
+  }	
+}		
+</style>
+  </head>
+    <body>
+	<div class="wrapper-container"> 
+		<div class="col1"><img src="col-1.png"></div>
+		<div class="col2">
+		<div class="header"><img id="header-normal" src="header.png"><img id="header-phone" src="header-phone.png"></div>
+			<div class="flex-container"> 
+			<div class="item2">TEMP<br>LEFT<br>MENU</div>
+			<div class="item3">
+			<!-- --------------------------------------------------------- -->
+			<!-- --------------------------------------------------------- -->
+			<!-- --------------------------------------------------------- -->
+			
+			<div class="fixed-width-col">
+			<h2>H2 Text</h2>
+<p>Web design is really just one expression of the skill set we will be exploring. We don’t term typography class “brochure design” so I’d argue
+we shouldn’t teach design for interaction as "web" design (even though this semester our focus will be almost exclusively on web pages).</p>
+<p>The skills we are learning are equally applicable to other applications many of which represent huge growth industries for graphic designers
+at present. I’m referring to things like mobile app design, kiosk interface (a kiosk is a purpose-built computer such as an ATM, an information
+kiosk, the check-in station at the airport, or a self-serve check out at the supermarket), computer game design, eBook design, and many more
+applications, some probably as yet unimagined! After all, in the fast-moving world of graphic design, interface design is indisputably the fastest
+part of all. Rapidly changing technologies are forcing our design patterns to respond evolving equally rapidly. The mechanics and tools of
+creation are constantly becoming obsolete as they are replaced by new tools.</p>
+<p>This presents us with a problem. Do we teach you to use a tool that may be useless within a few years, like we saw with the rise & fall of
+Flash™?</p>
+			
+			</div>			
+			<!-- --------------------------------------------------------- -->
+			<!-- --------------------------------------------------------- -->
+			<!-- --------------------------------------------------------- -->
+			</div>
+			<div class="item4"><img src="col-4.png"></div>
+			</div>	
+		</div>
+	</div>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
