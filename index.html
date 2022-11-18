@@ -55,7 +55,7 @@ body {
   
   .item2 { 
     width:192px;
-	background: #bbb;
+	    background: #eee;
   }
   .item3 { 
     flex-grow:1;
@@ -81,18 +81,94 @@ width: 1000px;
 }
 
 h2 {
-    font-weight: normal;
-    font-size: 40px;
+	font-weight: normal;
+    font-size: 27px;
     color: #662d8c;
-    margin-block-end: 15px;
-    margin-block-start: 0;
+    margin-block-end: 6px;
+    margin-block-start: 24px;
 	}
+h3 {
+font-weight: normal;
+    font-size: 22px;
+    color: #662d8c;
+    margin-block-end: 6px;
+    margin-block-start: 24px;
+}
+h4 {
+    font-weight: bold;
+    font-size: 17px;
+    color: #8e278a;
+    margin-block-end: 0px;
+    margin-block-start: 24px;
+}
 p{
-font-size: 23px;
-    letter-spacing: 1px;
-    line-height: 32px;
-    margin-block-end: 14px;
-    margin-block-start: 0px;}
+font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 22px;
+    margin-block-end: 16px;
+    margin-block-start: 6px;
+	}
+
+ul,ol {
+	margin-block-start: 30px;
+    margin-block-end: 40px;
+	}
+li {
+    margin: 6px 80px 12px 80px;
+}
+
+.well {
+    padding: 8px 70px 0 70px;
+    margin: 24px 0;
+}
+.well.yellow {
+    border: 4px solid #f1ba1b;
+}
+
+.well.purple {
+	background: #f5f3f0;
+    padding: 8px 40px;
+    border-left: 20px solid #b19eb9;
+}
+
+blockquote {
+    margin: 80px;
+    padding: 40px 0;
+}
+
+blockquote::before {
+content: "";
+    width: 336px;
+    height: 14px;
+    position: relative;
+    top: 0px;
+    left: 0;
+    background: #f7d676;
+    /* z-index: 20; */
+    display: block;
+}
+
+blockquote::after {
+content: "";
+    width: 306px;
+    height: 34px;
+    position: relative;
+    /* bottom: -40px; */
+    left: -306px;
+    background: #f7d676;
+    /* z-index: 20; */
+    display: block;
+    margin-left: 100%;}
+
+blockquote > p {
+font-size: 33px;
+    line-height: 56px;
+    font-family: "Georgia", serif;
+    text-align: right;
+    font-weight: bold;
+    color: #642f75;
+    padding: 40px 0;
+}
 
 @media only screen and (max-width: 1139px) {
   .item4 {
@@ -143,9 +219,40 @@ part of all. Rapidly changing technologies are forcing our design patterns to re
 creation are constantly becoming obsolete as they are replaced by new tools.</p>
 <p>This presents us with a problem. Do we teach you to use a tool that may be useless within a few years, like we saw with the rise & fall of
 Flash™?</p>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, cons<br>
+ectetuer dipiscing elit, sed diam<br>
+nonummy nibh euismod tincidunt</p>
+</blockquote>
+
+<h2>H2 Text</h2>
+<p>The 'how' will always be changing and, in practice, may not even fall into the job description of the designer, but be the duty of the developer or another team member</p>
+<h3>H3 Text</h3>
+<p>But 'what & why', these are questions for designers, and these are far more change proof. What we are getting at now is not so susceptible to
+fashion or new technology, but rather, it is something that sits alongside our other universal design principles like composition & colour.</p>
+<h4>H4 Text</h4>
+<ul>
+<li>Good user-centred design for interaction is at the heart of designing for all new media, and it will not date and it will never be superseded.</li>
+<li>
+As if to prove it’s timeless credentials the design principles of designing for user interaction predate computer interfaces.As much as has been learned about interaction design in the digital age, the basic principles were already laid
+down by groundbreaking architects & industrial designers centuries before.</li>
+<li>
+Let’s take a look at some examples from outside of web design to illustrate this thought. I’m going to use this opportunity to vent some of my small daily frustrations with you. This may sound like an indulgence, but stay with me. I have always found that negative examples, as well as positive ones, can really help us come to a better relationship with good design.</li>
+</ul>
+<h3>H3 Text</h3>
+<p>But 'what & why', these are questions for designers, and these are far more change proof. What we are getting at now is not so susceptible to fashion or new technology, but rather, it is something that sits alongside our other universal design principles like composition & colour.</p>
+<h3>H3 Text</h3>
+<p>But 'what & why', these are questions for designers, and these are far more change proof. What we are getting at now is not so susceptible to fashion or new technology, but rather, it is something that sits alongside our other universal design principles like composition & colour.</p>
+			
+			<div class="well yellow" >
+			<p><strong>Disclaimer</strong> Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ulla-</p>
+			</div>
+			<div class="well purple" >
+			<p><strong>Disclaimer</strong> Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ulla-</p>
+			</div>
 			
 			</div>			
-			<!-- --------------------------------------------------------- -->
+			<!-- goergia bold 33px 56 leading --------------------------------------------------------- -->
 			<!-- --------------------------------------------------------- -->
 			<!-- --------------------------------------------------------- -->
 			</div>
