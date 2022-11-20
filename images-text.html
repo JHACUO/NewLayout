@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title></title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="images/favicon.png" />
+<style>
+body {
+    margin: 0px;
+    font-family: "arial", sans-serif;
+
+}
+
+.wrapper-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+		background: #3c1053;
+
+}
+  .col1 { 
+	width: 84px;
+  }
+  
+  .col2 { 
+	flex: 0 1 auto;
+    align-self: auto;
+	width: 100%;
+	    background: #fff;
+  }
+  
+  .header { 
+    width: 100%;
+	height:72px;
+	        margin: 0 0 0 24px;
+	border-bottom: 1px solid #ccc;
+	background: #fff;	
+  }
+
+  .flex-container {
+    display: flex;
+    height: 98vh;
+  }
+
+  .flex-container > div{
+	height: 100%;
+  }
+  
+  .item2 { 
+    width:192px;
+	    background: #fff;
+  }
+  .item3 { 
+    flex-grow:1;
+	background: #fff;
+  }
+  .item4 { 
+    width: 288px;
+	background: #fff;	
+  }
+		
+#header-normal{display:block;}
+#header-phone {display:none;}
+
+
+
+.fixed-width-col {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    /* position: relative; */
+    /* top: 0px; */
+    padding: 40px;
+}
+
+.fixed-width-col img {
+    width: 100%;
+}
+
+figure {
+	margin: 40px 40px 50px 40px;
+}
+
+figcaption {
+	text-align:center;
+	font-size:13px; 
+	margin: 12px; 
+}
+
+.grid2{
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". ."
+        ". .";
+    margin: 40px 40px 0px 40px;
+}
+
+
+.grid4 {
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". ."
+        ". .";
+    margin: 40px 40px 0px 40px;
+}
+
+.grid4 > figure, .grid2 > figure {
+	margin: 10px;
+
+}
+.grid-captions{
+	font-size: 13px;
+    margin: 0 50px 50px;
+}
+
+h2 {
+	font-weight: normal;
+    font-size: 27px;
+    color: #662d8c;
+    margin-block-end: 6px;
+    margin-block-start: 24px;
+	}
+h3 {
+font-weight: normal;
+    font-size: 22px;
+    color: #662d8c;
+    margin-block-end: 6px;
+    margin-block-start: 24px;
+}
+h4 {
+    font-weight: bold;
+    font-size: 17px;
+    color: #8e278a;
+    margin-block-end: 0px;
+    margin-block-start: 24px;
+}
+p{
+font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 22px;
+    margin-block-end: 16px;
+    margin-block-start: 6px;
+	}
+
+ul,ol {
+	margin-block-start: 30px;
+    margin-block-end: 40px;
+	}
+li {
+    margin: 6px 80px 12px 80px;
+}
+
+.well {
+    padding: 8px 70px 0 70px;
+    margin: 24px 0;
+}
+.well.yellow {
+    border: 4px solid #f1ba1b;
+}
+
+.well.purple {
+	background: #f5f3f0;
+    padding: 8px 40px;
+    border-left: 20px solid #b19eb9;
+}
+
+blockquote {
+    margin: 80px;
+    padding: 40px 0;
+}
+
+blockquote::before {
+content: "";
+    width: 336px;
+    height: 14px;
+    position: relative;
+    top: 0px;
+    left: 0;
+    background: #f7d676;
+    /* z-index: 20; */
+    display: block;
+}
+
+blockquote::after {
+content: "";
+    width: 306px;
+    height: 34px;
+    position: relative;
+    /* bottom: -40px; */
+    left: -306px;
+    background: #f7d676;
+    /* z-index: 20; */
+    display: block;
+    margin-left: 100%;}
+
+blockquote > p {
+font-size: 33px;
+    line-height: 56px;
+    font-family: "Georgia", serif;
+    text-align: right;
+    font-weight: bold;
+    color: #642f75;
+    padding: 40px 0;
+	width: 75%;
+    margin-left: 25%;
+}
+
+@media only screen and (max-width: 1139px) {
+  .item4 {
+    display:none;
+  }
+}		
+@media only screen and (max-width: 767px) {
+  .col1 {
+    display:none;
+  }
+  .item2 {
+    display:none;
+  }
+	#header-normal{display:none;}
+	#header-phone {display:block;}
+	
+  .header { 
+    width: 100%;
+	height:55px;
+	margin: 0;
+	border-bottom: 0px solid #ccc;
+	background: #3c1053;
+  }	
+}		
+</style>
+  </head>
+    <body>
+	<div class="wrapper-container"> 
+		<div class="col1"><img src="col-1.png"></div>
+		<div class="col2">
+		<div class="header"><img id="header-normal" src="header.png"><img id="header-phone" src="header-phone.png"></div>
+			<div class="flex-container"> 
+			<div class="item2"><img src="col-3.png"></div>
+			<div class="item3">
+			<!-- --------------------------------------------------------- -->
+			<!-- --------------------------------------------------------- -->
+			<!-- --------------------------------------------------------- -->
+			
+			<div class="fixed-width-col">
+			<h2>Text and Image (H2)</h2>
+<p>Web design is really just one expression of the skill set we will be exploring. We don’t term typography class “brochure design” so I’d argue
+we shouldn’t teach design for interaction as "web" design (even though this semester our focus will be almost exclusively on web pages).</p>
+<p>Web design is really just one expression of the skill set we will be exploring. We don’t term typography class “brochure design” so I’d argue
+we shouldn’t teach design for interaction as "web" design (even though this semester our focus will be almost exclusively on web pages).</p>
+<figure>	
+<img src="https://cdnepodedlcmediatest.azureedge.net/unitcontent/SWTP633/2023-T1/images/SWTP633_Week08_04.png">
+<figcaption>Caption goes here [bit.ly/hjdghjd783]</figcaption>
+</figure>
+
+
+<p>The skills we are learning are equally applicable to other applications many of which represent huge growth industries for graphic designers
+at present. I’m referring to things like mobile app design, kiosk interface (a kiosk is a purpose-built computer such as an ATM, an information
+kiosk, the check-in station at the airport, or a self-serve check out at the supermarket), computer game design, eBook design, and many more
+applications, some probably as yet unimagined! After all, in the fast-moving world of graphic design, interface design is indisputably the fastest
+part of all. Rapidly changing technologies are forcing our design patterns to respond evolving equally rapidly. The mechanics and tools of creation are constantly becoming obsolete as they are replaced by new tools.</p>
+<p>This presents us with a problem. Do we teach you to use a tool that may be useless within a few years, like we saw with the rise & fall of
+Flash™?</p>
+
+<div class="grid2">
+	<figure>	
+	<img src="https://cdnepodedlcmediatest.azureedge.net/unitcontent/SWTP633/2023-T1/images/SWTP633_Week08_04.png">
+	<figcaption>[1]</figcaption>
+	</figure>
+	<figure>	
+	<img src="https://cdnepodedlcmediatest.azureedge.net/unitcontent/SWTP633/2023-T1/images/SWTP633_Week08_04.png">
+	<figcaption>[2]</figcaption>
+	</figure>
+	<figure>
+</div>
+<p class="grid-captions">[1] Caption goes here [bit.ly/hjdghjd783]<br>
+[2] Caption goes here [bit.ly/hjdghjd783]</p>
+<p>But 'what & why', these are questions for designers, and these are far more change proof. What we are getting at now is not so susceptible to fashion or new technology, but rather, it is something that sits alongside our other universal design principles like composition & colour.</p>
+<p>The skills we are learning are equally applicable to other applications many of which represent huge growth industries for graphic designers
+at present. I’m referring to things like mobile app design, kiosk interface (a kiosk is a purpose-built computer such as an ATM, an information
+kiosk, the check-in station at the airport, or a self-serve check out at the supermarket), computer game design, eBook design, and many more
+applications, some probably as yet unimagined! After all, in the fast-moving world of graphic design, interface design is indisputably the fastest
+part of all. Rapidly changing technologies are forcing our design patterns to respond evolving equally rapidly. The mechanics and tools of creation are constantly becoming obsolete as they are replaced by new tools.</p>
+<div class="grid4">
+	<figure>	
+	<img src="https://cdnepodedlcmediatest.azureedge.net/unitcontent/SWTP633/2023-T1/images/SWTP633_Week08_04.png">
+	<figcaption>[1]</figcaption>
+	</figure>
+	<figure>	
+	<img src="https://cdnepodedlcmediatest.azureedge.net/unitcontent/SWTP633/2023-T1/images/SWTP633_Week08_04.png">
+	<figcaption>[2]</figcaption>
+	</figure>
+	<figure>	
+	<img src="https://cdnepodedlcmediatest.azureedge.net/unitcontent/SWTP633/2023-T1/images/SWTP633_Week08_04.png">
+	<figcaption>[3]</figcaption>
+	</figure>
+	<figure>	
+	<img src="https://cdnepodedlcmediatest.azureedge.net/unitcontent/SWTP633/2023-T1/images/SWTP633_Week08_04.png">
+	<figcaption>[4]</figcaption>
+	</figure>
+</div>
+<p class="grid-captions">[1] Caption goes here [bit.ly/hjdghjd783]<br>
+[2] Caption goes here [bit.ly/hjdghjd783]<br>
+[3] Caption goes here [bit.ly/hjdghjd783]<br>
+[4] Caption goes here [bit.ly/hjdghjd783]</p>
+<p>But 'what & why', these are questions for designers, and these are far more change proof. What we are getting at now is not so susceptible to fashion or new technology, but rather, it is something that sits alongside our other universal design principles like composition & colour.</p>
+<h3>H3 Text</h3>
+<p>But 'what & why', these are questions for designers, and these are far more change proof. What we are getting at now is not so susceptible to fashion or new technology, but rather, it is something that sits alongside our other universal design principles like composition & colour.</p>
+			
+<blockquote>
+<p>Lorem ipsum dolor sit amet, cons
+ectetuer dipiscing elit, sed diam
+nonummy nibh euismod tincidunt
+</blockquote>
+
+<p>The skills we are learning are equally applicable to other applications many of which represent huge growth industries for graphic designers
+at present. I’m referring to things like mobile app design, kiosk interface (a kiosk is a purpose-built computer such as an ATM, an information
+kiosk, the check-in station at the airport, or a self-serve check out at the supermarket), computer game design, eBook design, and many more
+applications, some probably as yet unimagined! After all, in the fast-moving world of graphic design, interface design is indisputably the fastest
+part of all. Rapidly changing technologies are forcing our design patterns to respond evolving equally rapidly. The mechanics and tools of creation are constantly becoming obsolete as they are replaced by new tools.</p>
+<p>The skills we are learning are equally applicable to other applications many of which represent huge growth industries for graphic designers
+at present. I’m referring to things like mobile app design, kiosk interface (a kiosk is a purpose-built computer such as an ATM, an information
+kiosk, the check-in station at the airport, or a self-serve check out at the supermarket), computer game design, eBook design, and many more
+applications, some probably as yet unimagined! After all, in the fast-moving world of graphic design, interface design is indisputably the fastest
+part of all. Rapidly changing technologies are forcing our design patterns to respond evolving equally rapidly. The mechanics and tools of creation are constantly becoming obsolete as they are replaced by new tools.</p>
+
+			<div class="well purple" >
+			<p><strong>Disclaimer</strong> Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ulla-</p>
+			</div>
+			
+			</div>			
+			<!-- goergia bold 33px 56 leading --------------------------------------------------------- -->
+			<!-- --------------------------------------------------------- -->
+			<!-- --------------------------------------------------------- -->
+			</div>
+			<div class="item4"><img src="col-4.png"></div>
+			</div>	
+		</div>
+	</div>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
