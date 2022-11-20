@@ -94,30 +94,16 @@ figcaption {
 	margin: 12px; 
 }
 
-.grid2{
-	display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        ". ."
-        ". .";
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-column-gap: 0;
+    grid-row-gap: 0px;
+	
     margin: 40px 40px 0px 40px;
 }
 
-
-.grid4 {
-	display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        ". ."
-        ". .";
-    margin: 40px 40px 0px 40px;
-}
-
-.grid4 > figure, .grid2 > figure {
+.grid > figure {
 	margin: 10px;
 
 }
@@ -275,7 +261,7 @@ part of all. Rapidly changing technologies are forcing our design patterns to re
 <p>This presents us with a problem. Do we teach you to use a tool that may be useless within a few years, like we saw with the rise & fall of
 Flash™?</p>
 
-<div class="grid2">
+<div class="grid">
 	<figure>	
 	<img src="https://cdnepodedlcmediatest.azureedge.net/unitcontent/SWTP633/2023-T1/images/SWTP633_Week08_03.png">
 	<figcaption>[1]</figcaption>
@@ -294,7 +280,7 @@ at present. I’m referring to things like mobile app design, kiosk interface (a
 kiosk, the check-in station at the airport, or a self-serve check out at the supermarket), computer game design, eBook design, and many more
 applications, some probably as yet unimagined! After all, in the fast-moving world of graphic design, interface design is indisputably the fastest
 part of all. Rapidly changing technologies are forcing our design patterns to respond evolving equally rapidly. The mechanics and tools of creation are constantly becoming obsolete as they are replaced by new tools.</p>
-<div class="grid4">
+<div class="grid">
 	<figure>	
 	<img src="https://cdnepodedlcmediatest.azureedge.net/unitcontent/SWTP633/2023-T1/images/SWTP633_Week08_02.png">
 	<figcaption>[1]</figcaption>
