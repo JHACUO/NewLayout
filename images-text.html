@@ -36,13 +36,32 @@ body {
 	    background: #fff;
   }
   
-  .header { 
-    width: 100%;
-	height:72px;
-	        margin: 0 0 0 24px;
-	border-bottom: 1px solid #ccc;
-	background: #fff;	
+.header {
+    width: 98%;
+    height: 72pxpx;
+    padding: 0 0 0 2%;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+	display: flex;
+    align-items: center;
   }
+  
+#header-normal{display:block;}
+#header-phone {display:none;}
+
+.header ul
+{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+.header ul li
+{
+    padding: 5px;
+    display: inline;
+    margin: 0;
+}
+
 
   .flex-container {
     display: flex;
@@ -66,8 +85,7 @@ body {
 	background: #fff;	
   }
 		
-#header-normal{display:block;}
-#header-phone {display:none;}
+
 
 
 
@@ -216,6 +234,9 @@ font-size: 33px;
   .item2 {
     display:none;
   }
+  .header ul li a
+	{ color: #fff;}
+
 	#header-normal{display:none;}
 	#header-phone {display:block;}
 	
@@ -233,7 +254,12 @@ font-size: 33px;
 	<div class="wrapper-container"> 
 		<div class="col1"><img src="col-1.png"></div>
 		<div class="col2">
-		<div class="header"><img id="header-normal" src="header.png"><img id="header-phone" src="header-phone.png"></div>
+		<div class="header"><img id="header-normal" src="header.png"><img id="header-phone" src="header-phone.png">
+			<ul>
+			<li><a href="index.html">1] Base style</a></li>
+			<li><a href="images-text.html">2] Text/Images</a>
+			</ul>
+		</div>
 			<div class="flex-container"> 
 			<div class="item2"><img src="col-3.png"></div>
 			<div class="item3">
@@ -336,7 +362,6 @@ part of all. Rapidly changing technologies are forcing our design patterns to re
 			</div>	
 		</div>
 	</div>
-
     <script src="js/scripts.js"></script>
   </body>
 </html>
