@@ -199,6 +199,27 @@ hr{
 }
 
 
+table.table {
+    margin: 40px 0;
+}
+
+    table.table > tbody td, table.table > tbody th {
+        padding: 5px 15px;
+    }
+
+    table.table > tbody tr:nth-child(odd) {
+        background: #f6f4f1;
+    }
+
+    table.table > tbody > tr:last-child > td {
+        border-bottom: 10px solid #d9cfde;
+    }
+
+    table.table th {
+        text-align: left;
+        border-top: 5px solid #d9cfde;
+    }
+
 h1 {
     font-size: 2.6em;
     font-weight: 200;
